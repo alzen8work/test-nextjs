@@ -45,7 +45,10 @@ ENV PORT=3000
 
 ARG HOSTNAME
 
-CMD node server.js
+# CMD node server.js
+
+
+CMD ["npm", "start"]
 
 # https://www.youtube.com/watch?v=6fRDmfPAmyA
 # https://github.com/webdevcody/webdevcody.com/blob/main/Dockerfile
